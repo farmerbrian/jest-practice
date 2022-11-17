@@ -3,23 +3,28 @@ function capitalize(myString) {
 }
 
 function reverseString(myString) {
-	return;
+	return myString.split('').reverse().join('');
 }
 
-function calculator(a, b) {}
+let calculator = {
+	add: function (a, b) {
+		return a + b;
+	},
+	subtract: function (a, b) {
+		return a - b;
+	},
+	divide: function (a, b) {
+		return a / b;
+	},
+	multiply: function (a, b) {
+		return a * b;
+	},
+};
 
 function ceaserCipher(myString) {}
 
 function analyzeArray(arr) {}
 
-// module.exports = {
-// 	capitalize,
-// 	reverseString,
-// 	calculator,
-// 	ceaserCipher,
-// 	analyzeArray,
-// };
-
-// module.exports = capitalize;
-
 export { capitalize };
+export { reverseString };
+export { calculator };
